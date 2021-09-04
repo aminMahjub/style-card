@@ -15,15 +15,13 @@ body {
     position: relative;
     top: 4vh;
     background-color: #fff;
-    width: 30vw;
-    height: 740px;
+    width: 30vw;    
     border-radius: 20px;
     padding: 20px;
 }
 
 .information {
     display: flex;
-    height: 150px;
     margin-bottom: 20px;
 }
 
@@ -35,13 +33,15 @@ body {
 }
 
 .peronal-information {
-    margin-left: 25px;  
+    margin-left: 25px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;  
 }
 
 .peronal-information div {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-
 
 .name {
     font-size: 35px;
@@ -66,15 +66,18 @@ body {
 
 .date-information {
     background-color: rgb(195, 249, 253);
-    display: grid;
-    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 30px;
     row-gap: 40px;
+    justify-content: space-around;
     border-radius: 20px;
-    height: 250px;
-    margin-bottom: 70px;
+    margin: 30px 0px 70px;
 }
 .date-clock {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .date-clock-action {
@@ -86,7 +89,6 @@ body {
 }
 
 .date {
-    flex-grow: 1;
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAoElEQVRIid2U0Q2DMAxEnyPGIKug/sEkDNUuAn9VV8keuD8pSiKEFAJFcH+2rIvvTg7cFtKMKs2opXNm37UWFoiqx9DJJC+g3sjn1GjPuxt+jUiBTPIsIAewnmNGlQ4A6KcVNsBnYcPe4RmkCsJNdsE5CgoziHC4gnMsWsOSDWuWXt+i6z+QHXLujfxdgQNs4V/kwiJSoEb7dCCX3HPcCF9f8i4ht4j9twAAAABJRU5ErkJggg==');
 }
 .clock {
@@ -111,15 +113,17 @@ body {
 }
 
 .footer {
-    display: grid;
-    row-gap: 40px;
+    display: flex;
+    flex-flow: column;
     justify-content: center;
-    height: 100px;
+    align-items: center;
+    height: 20vh;
 }
 
 .footer button {
     width: 180px;
     height: 50px;
+    margin-bottom: 40px;
     border-radius: 10px;
     font-size: 20px;
     background-color: rgb(1, 62, 185);
@@ -133,10 +137,4 @@ body {
 
 button {
     cursor: pointer;
-}
-
-@media only screen and (max-width: 1269px) {
-    .information {
-        margin-bottom: 70px;
-    }
 }
